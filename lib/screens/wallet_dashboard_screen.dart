@@ -51,16 +51,18 @@ class _WalletDashboardState extends State<WalletDashboard> {
               ),
             ),
             ElevatedButton(
-              onPressed: () {
-                const storage = FlutterSecureStorage();
-                storage.delete(key: SecureStorage.privateKey);
-                context.read<PrivateKey>().setPrivateKey(null);
-              },
+              onPressed: () => handleLogOut(context),
               child: const Text("Log out"),
             )
           ],
         ),
       ),
     );
+  }
+
+  void handleLogOut(BuildContext context) {
+    const storage = FlutterSecureStorage();
+    storage.delete(key: SecureStorage.privateKey);
+    context.read<PrivateKey>().setPrivateKey(null);
   }
 }
