@@ -38,7 +38,7 @@ dependencies:
   erc20: ^1.0.0
   http: ^0.13.4
   google_fonts: ^3.0.1
-  flutter_secure_storage: ^4.2.1
+  flutter_secure_storage: ^5.0.2
   flutter_dotenv: ^5.0.2
 
 dev_dependencies:
