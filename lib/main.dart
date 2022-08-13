@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:web3_wallet_flutter/constants/secure_storage_keys.dart';
 import 'package:web3_wallet_flutter/model/wallet_private_key.dart';
@@ -58,6 +59,7 @@ class _MyAppState extends State<MyApp> {
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
         primarySwatch: Colors.green,
+        fontFamily: GoogleFonts.montserrat().fontFamily,
       ),
       home: const ScreenWrapper(),
     );
