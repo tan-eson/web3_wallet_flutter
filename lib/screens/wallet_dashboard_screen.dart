@@ -101,6 +101,8 @@ class _WalletDashboardState extends State<WalletDashboard> {
                   onPressed: () => handleLogOut(context),
                   child: const Text("Log out"),
                 ),
+
+                /// Painting the listview that will display all our NFTs
                 FutureBuilder<List<NFT>>(
                   future: allNfts,
                   builder: (context, AsyncSnapshot<List<NFT>> snapshot) {
