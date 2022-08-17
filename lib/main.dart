@@ -44,6 +44,10 @@ class _MyAppState extends State<MyApp> {
     getKeyFromStorage();
   }
 
+  // TODO: Update README
+  // TODO: Add flutter_screenutil
+  // TODO: Add flutter_spinkit
+  // TODO: Implement intl package
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
