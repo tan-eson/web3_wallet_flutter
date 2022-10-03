@@ -12,9 +12,11 @@ Future<List<NFT>> fetchUserNFTs(String owner, String network) async {
   List<NFT> allNfts = [];
   try {
     final queryResponse = await get(
-      Uri.parse("$baseUrl/$owner/nft?chain=$network&format=decimal"),
+      Uri.https(baseUrl!, "/api/v2/$owner/nft",
+          {"chain": network, "format": "decimal"}),
       headers: {
-        'x-api-key': _apiKey ?? "-",
+        "accept": "application/json",
+        'X-API-Key': _apiKey ?? "-",
       },
     );
 
